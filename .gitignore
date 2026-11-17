@@ -1,2 +1,41 @@
+# ---- Secrets: never commit these ----
+# Environment files (.env, .env.local, .env.production, ...)
+.env
+.env.*
+*.env
+# ...but keep a blank template that lists variable names without values
+!.env.example
+!.env.sample
+!.env.template
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa*
+id_ed25519*
+
+# Files that commonly hold API keys or credentials
+secrets.*
+*secret*.json
+credentials.json
+service-account*.json
+*.keystore
+.npmrc
+.pypirc
+.netrc
+
+# Hosting tool folders that can store tokens
+.netlify/
+.vercel/
+.wrangler/
+
+# ---- Build and system clutter ----
 __pycache__/
 *.pyc
+node_modules/
+.DS_Store
+Thumbs.db
