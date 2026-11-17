@@ -1,0 +1,19 @@
+{
+  "name": "k4-provisions-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "K4 Provisions LLC website: kitchen hood cleaning, parking lot pressure washing and garbage can cleaning in North Texas.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs site",
+    "start": "node scripts/serve.mjs site",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs && node scripts/serve.mjs dist",
+    "pages": "python3 site/_build/build.py",
+    "illustrations": "python3 site/_build/illustrations.py"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
